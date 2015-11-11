@@ -43,9 +43,12 @@ CIFAR-10 Model
 --------------------
 The CIFAR-10 network is largely contained in ```cifar10.py```. The complete training graph contains roughly 765 operations. We find that we can make the code most reusable by constructing the graph with the following modules:
 
-    1. Model inputs: ```inputs()``` and distorted_inputs() add operations that read and preprocess CIFAR images for evaluation and training, respectively.
-    2. Model prediction: ```inference()``` adds operations that perform inference, i.e. classification, on supplied images.
-    3. Model training: ```loss()``` and ```train()``` add operations that compute the loss, gradients, variable updates and visualization summaries.
+
+    1. Model inputs: inputs() and distorted_inputs() add operations that read and preprocess CIFAR images for evaluation and training, respectively.
+    
+    2. Model prediction: inference() adds operations that perform inference, i.e. classification, on supplied images.
+    
+    3. Model training: loss() and train() add operations that compute the loss, gradients, variable updates and visualization summaries.
 
 --------------------
 Model Inputs
@@ -54,10 +57,12 @@ The input part of the model is built by the functions ```inputs()``` and ```dist
 
 The images are processed as follows:
 
+
     * They are cropped to 24 x 24 pixels, centrally for evaluation or randomly for training.
     * They are approximately whitened to make the model insensitive to dynamic range.
 
 For training, we additionally apply a series of random distortions to artificially increase the data set size:
+
 
     * Randomly flip the image from left to right.
     * Randomly distort the image brightness.
