@@ -105,7 +105,7 @@ Filling queue with 20000 CIFAR images before starting to train. This will take a
 2015-11-10 10:45:51.397710: step 20, loss = 4.64 (597.4 examples/sec; 0.214 sec/batch)
 2015-11-10 10:45:54.446850: step 30, loss = 4.62 (391.0 examples/sec; 0.327 sec/batch)
 2015-11-10 10:45:57.152676: step 40, loss = 4.61 (430.2 examples/sec; 0.298 sec/batch)
-2015-11-11 10:46:00.437717: step 50, loss = 4.59 (406.4 examples/sec; 0.315 sec/batch)
+2015-11-10 10:46:00.437717: step 50, loss = 4.59 (406.4 examples/sec; 0.315 sec/batch)
 ```
 The script reports the total loss every 10 steps as well the speed at which the last batch of data was processed. A few comments:
 
